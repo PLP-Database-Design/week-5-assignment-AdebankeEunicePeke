@@ -1,0 +1,19 @@
+<table>
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Provider Speciality</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <% results.forEach(providers => {%>
+        <tr>
+            <td> <%= providers.first_name %></td>
+            <td> <%= providers.last_name %></td>
+            <td> <%= providers.provider_specialty %></td>
+        </tr>
+       <% }); %>
+    </tbody>
+</table>
